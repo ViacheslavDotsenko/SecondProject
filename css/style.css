@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Open+Sans:ital@1&family=Raleway:ital,wght@0,100;0,300;0,400;0,500;1,300;1,500&display=swap');
+
 
 
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     max-width: 1600px;
+    border: 0px;
 }
 /* .header{} */
 .navbar{
@@ -44,7 +47,7 @@
 
 }
 .navbarRight a{    
-    font-family: Proxima Nova;
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -87,25 +90,25 @@
     position:relative;
     max-width: 1600px;       
     display: table;
+    /* margin-top: 108px; */
     margin-top: 108px;
-    
+    padding: 0px 12% 0px 12%;
 }
 .section_1_text{
     box-sizing: border-box;
-    height: 192.27px;
-    width: 550px;
-    left: 217px;
-/* top: 236.12939453125px; */
-
-    box-shadow: 0 0 30px 0 rgba(62, 190, 11, 0.3);
-    margin:0px 0 50px 217px ;
+    max-height: 192.27px;
+    max-width: 550px;
+    position: relative;
+    /* box-shadow: 0px 0px 30px 0px rgba(62, 190, 11, 0.3); */
+    
     display:inline-block;
-    margin-top: 80px;
-
+    /* top: -10em; */
+    margin-right: 38px;
+    margin-top:10%;
 }
 .section_1 input{    
     cursor: pointer;
-    font-family: Proxima Nova;
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -119,44 +122,62 @@
 }
 .section_1_img1{
     max-width: 566px;
-    max-height: 387.4;
+    max-height: 387.4px;
     display:inline-block;
-    margin: 0px 0 0 0; 
-    z-index: 3;
+    margin-left: 10px;
 }
 .section_1_img2{
     /* background-image: url(../img/background_img_section1.2.svg); */
     max-width: 566px;
     max-height: 506px;
     display:inline-block;
-    margin-left: 130px;
+    position: relative;
+    margin-top: 80px;
+    left: -20px;
 }
 .section_1_text1{
+    content: '';
     display:inline-block;
     max-width: 558px;
-    font-family: Proxima Nova;
+    max-height: 481px;
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 32px;
     color: #333945;
+    position: absolute;
+    margin-top: 95px;
+    margin-right: 200px;
+    overflow: hidden;
+    flex-shrink: 2;
 }
+
 .section_2{
+    padding: 2% 1.25%;
+    text-align: justify;
     background-image: url(../img/background_img_section2.svg);
+}
+.section_2:after{
+    content: '';
+    display: inline-block;
+    overflow: hidden;
+    height: 0;
+    width: 100%;
 }
 .section_2 h2{
     padding-top: 96px;
-    font-family: Proxima Nova;
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 38px;
     line-height: 46px;
     text-align: center;
     color: #333945;
-    margin: 96px 500px 32px 499px;
+    margin: 2.25% 0;
 }
 .section_2 h3{
-    font-family: Proxima Nova;
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -164,10 +185,10 @@
 /* or 133% */
     text-align: center;
     color: #333945;
-    margin: 0 258px 0 256px;
+    margin: 0 12% 0 11%;
 }
 .section_2 p{
-    font-family: Proxima Nova;
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -175,9 +196,10 @@
 /* or 178% */
 /* SM/dark */
     color: #333945;
+    padding: 3%;
 }
 .section_2 h4{
-    font-family: Proxima Nova;
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -187,22 +209,29 @@
     color: #027FC2;
 }
 .section_2 div{
-    padding: 92px 32px 71px 32px;
+    padding-left: 5%;
     display:inline-block;
-    width: 566px;
-    height: 323px;
+    max-width: 566px;
+    max-height: 323px;
     background: #FFFFFF;
 /* 1 */
     box-shadow: 0px 62px 80px rgba(0, 0, 0, 0.07), 0px 22px 24px rgba(0, 0, 0, 0.04), 0px 6px 4px rgba(0, 0, 0, 0.03);
     border-radius: 4px;
+    
 }
-.section_2 div:nth-child(1){
+.section_2 div p{
+    overflow: hidden;
+    flex-shrink: 2;
+    
+}
+/* .section_2 div:nth-child(1){
     margin-top: 286px;
     margin-left: 217px;
-}
+} */
 .section_2 div h4 img{
     position: relative;
     padding-right: 24px;
+    
 }
 .section_3 {
     margin: 0;
@@ -215,7 +244,7 @@
     max-height: 320px;
 }
 .section_3 h2{
-    font-family: Proxima Nova;
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 38px;
@@ -239,6 +268,19 @@
     margin-top: 40px;
     margin-bottom: 94px;
 }
+.section_3 div p{
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+/* or 178% */
+
+
+/* SM/dark */
+
+    color: #333945;
+}
 .section_4{
     background-color: #F4FBFF;
     padding-left: 200px;
@@ -248,11 +290,21 @@
 }
 .section_4 div h4{
     color: #027FC2;
-    font-family: Proxima Nova;
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
     line-height: 24px;
+}
+.section_4 div p {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+/* or 178% */
+/* SM/dark */
+    color: #333945;
 }
 .section_4 div:nth-child(2) {
     max-height: 270px;
@@ -276,7 +328,7 @@
     display: inline-block;
 }
 .section_5 h2{
-    font-family: Proxima Nova;
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 38px;
@@ -289,7 +341,7 @@
 }
 
 .section_5 div p{
-    font-family: Proxima Nova;
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -299,10 +351,15 @@
     color: #333945;
 }
 .section_6{
-    background-color:  #F4FBFF;;
+    background-color:  #F4FBFF;
+    display: inline-block;
+}
+.section_6 div {
+    max-width: 566px;
+    display: inline-block;
 }
 .section_6 div h4{
-    font-family: Proxima Nova;
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -310,25 +367,65 @@
 /* identical to box height */
     color: #027FC2;
 }
-.section_7{
-    
-    background-color: 180deg, #0181C1 0%, #2DB4D6 100%;
-    background-size: 100%, 419px;
+.section_6 div p{
+    font-family:'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+/* or 178% */
+
+
+/* SM/dark */
+
+    color: #333945;
+
 }
+.section_7{
+    z-index: -1;
+    background:linear-gradient(180deg, #0181C1 0%, #2DB4D6 100%);
+    background-size:  419px;
+    /* text-align: justify; */
+}
+/* .section_7:after{
+    content: '';
+    display: inline-block;
+    overflow: hidden;
+    height: 0;
+    width: 100%; 
+}*/
+.section_7 img:nth-child(1){
+    position: relative;
+    z-index: 10;
+    margin-top: 94px;
+    margin-left: 10%;
+}
+.section_7 img:nth-child(2){
+    position: relative;
+    z-index: 11;
+    float: right;
+    margin-right: 10%;
+    margin-top: 94px;
+}
+
 .section_7 h2{
-    font-family: Proxima Nova;
+    
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 42px;
     line-height: 136%;
 /* or 57px */
+    position: relative;
     text-align: center;
     color: #FFFFFF;
-    padding-top: 65px;
+    padding-top: -70px;
+    z-index: 2;
+    
 
 }
 .section_7 h3{
-    font-family: Proxima Nova;
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -338,7 +435,8 @@
     color: #FFFFFF;
 }
 .section_7 input{
-    font-family: Proxima Nova;
+    /* text-align: center; */
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -349,7 +447,9 @@
     flex: none;
     border: 0;
     flex-grow: 0;
-    margin: 0px 10px;
+    margin-left: 45%;
+    /* margin: 0px 10px; */
+    /* text-align: center; */
 }
 .section_7 div{
     width: 270px;
@@ -360,17 +460,20 @@
     box-sizing: border-box;
     border-radius: 4px;
 }
+.section_7 div:first-child{
+    margin-left: 10%;
+    background: salmon;
+}
 .section_7 div:nth-child(2){
     background: #FFFFFF;
     border: 2px solid #57BAE7;
     box-sizing: border-box;
 /* 1 */
-
     box-shadow: 0px 62px 80px rgba(0, 0, 0, 0.07), 0px 22px 24px rgba(0, 0, 0, 0.04), 0px 6px 4px rgba(0, 0, 0, 0.03);
     border-radius: 4px;
 }
 .section_7 small{
-    font-family: Proxima Nova;
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -379,7 +482,7 @@
     color: #333945;
 }
 .section_7 small span{
-    font-family: Proxima Nova;
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -388,21 +491,23 @@
     color: #027FC2;
 }
 .section_8{
-
+    padding-left: 10%;
+    
 }
 .section_8 h2{
-    font-family: Proxima Nova;
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 38px;
     line-height: 46px;
     text-align: center;
-
 /* SM/dark */
     color: #333945;
+    margin-top: 90px;
+    margin-bottom: 56px;
 }
 .section_8 h4{
-    font-family: Proxima Nova;
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -412,15 +517,17 @@
 }
 .section_8 div{
     background: #FFFFFF;
-    width: 566px;
+    max-width: 560px;
     height: 323px;
     display:inline-block;
     box-shadow: 0px 62px 80px rgba(0, 0, 0, 0.07), 0px 22px 24px rgba(0, 0, 0, 0.04), 0px 6px 4px rgba(0, 0, 0, 0.03);
     border-radius: 4px;
     margin: 20px 20px;
+    content: '';
+    position: ;
 }
 .section_8 div p{
-    font-family: Proxima Nova;
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
