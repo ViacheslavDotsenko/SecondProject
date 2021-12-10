@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Open+Sans:ital@1&family=Raleway:ital,wght@0,100;0,300;0,400;0,500;1,300;1,500&display=swap');
 
+
 body, html {
     margin: 0;
     padding: 0;
@@ -132,6 +133,7 @@ input {
     height: 54px;
     top: 20px; 
     cursor: pointer;
+    text-decoration: none;
 }
 
 .free-month-button-button {
@@ -142,7 +144,6 @@ input {
     text-transform: uppercase;
     color: #333333;
     padding-top: 13px;
-    cursor: pointer; 
 }
 
 .colortext {
@@ -176,8 +177,7 @@ p {
     margin-top:55px;
 }
 
-.button-try {    
-    cursor: pointer;
+.button-try {        
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -201,8 +201,7 @@ p {
     margin-left: 10px;
 }
 
-.section_1_img2 {
-    /* background-image: url(../img/background_img_section1.2.svg); */
+.section_1_img2 {    
     max-width: 566px;
     max-height: 506px;
     display:inline-block;
@@ -248,16 +247,18 @@ p {
     z-index: 4; 
 }    
 
+
+
 .why-should-care-icon {
     vertical-align: middle;
     padding-right: 20px;
 }
 
-/* .section_2:after {    
+.section_2:after {    
     content: '';
     display: table;
     clear: both;
-} */
+}
 
 .why-should-care-h3 {
     margin-left: 7%;
