@@ -242,7 +242,19 @@ p {
     z-index: 4; 
 }    
 
+.why-should-care div:nth-child(2)::before {
+    content: '';     
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    margin-top: 50px;
+    /* background-image: url(..img/background_sectiot2_cloud.svg); */
+    background-color: lawngreen;
+} 
 
+.why-should-care:last-child {
+    margin-left: 32px;
+}
 
 .why-should-care-icon {
     vertical-align: middle;
@@ -253,6 +265,7 @@ p {
     content: '';
     display: table;
     clear: both;
+    
 }
 
 .why-should-care-h3 {
@@ -434,6 +447,10 @@ p {
 }
 
     /* section_8*/
+    
+.hide {
+    display: none;
+}
 
 .negative_reviews {
     background: #FFFFFF;
@@ -462,4 +479,9 @@ p {
     box-shadow: none;
     vertical-align: top;
 }
+
+.negative_reviews-h4 img:last-child.cross-img {
+    display: none;
+}
+
 

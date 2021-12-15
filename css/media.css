@@ -39,6 +39,7 @@
         
 
     }
+
     p {
         font-weight: normal;
         font-size: 16px;
@@ -47,33 +48,40 @@
     }
 
     h1 {
-    font-weight: bold;
-    font-size: 32px;
-    
+        font-weight: bold;
+        font-size: 32px;    
     }
 
     h2 {
         font-size: 24px;
-        line-height: 29px;
-        
+        line-height: 29px;        
+    }
+
+    h4 {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        color: #027FC2;
     }
 
     .fair-prices-cloud {
         display: none;
     }
+
     .section_1, .section_2, .section_3, .section_4, .section_5, .section_6, .section_7, .section_8 {
         max-width: 420px;
         height: 100%;
         overflow-x:hidden;
     }
+
     .container {
-        max-width: 327px;
-        padding: 0;
+       max-width: 360px;
        display: flex;
        flex-direction: column;
        flex-wrap: wrap; 
        overflow-x:hidden;              
     }  
+
     .logo {
         display: block;
         position: relative;
@@ -115,6 +123,7 @@
     .section_1_text1 {
         font-size: 16px;
         text-align: justify;
+        margin-left: 0px;
     }
 
     .section_1_img1 {
@@ -147,6 +156,47 @@
         height: 100%;
     }
 
+    /*section_2*/
+
+    .why-should-care {
+        width: 328px;
+        height: 70px;
+        overflow: hidden;
+        margin: 24px 5px 0 0;
+        padding: 0 20px 0 24px;
+        text-align: left;
+        box-shadow: 0px 9px 31px rgba(0, 0, 0, 0.07), 0px 1.12694px 3.88168px rgba(0, 0, 0, 0.035);
+        border-radius: 8px;
+        
+    }
+
+    .why-should-care p {
+        display: none;
+    }
+
+    .why-should-care-icon {
+        box-sizing: border-box;
+        width: 30px;
+        margin: 0;
+        padding-right: 7px;
+    }
+
+    .why-should-care-h3 {
+        margin: 0;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 32px;
+        color: #333945;    
+    }
+
+    .why-should-care h4 {
+        text-align: left;
+    }
+
+    .why-should-care:last-child {
+        margin-left: 0;
+    }
+
     .user-section {
         max-width: 328px;
         height: 100%;
@@ -156,41 +206,48 @@
         width: 100%;
         height: 100%;
     }
+
     /* section_5*/
+
     .automate-amazon-h2 {
-        margin-right: 20px;
+        margin-right: 5px;
         text-align: justify;
         width: 100%;
-
     }
+
     .automate-amazon {
         padding: 0;
         width: 100%;
         height: 100%;
     }
+
     .automate-amazon-img img {
         width: 100%;
         height: 100%;
     }
-    .email-automation
-    /*section_6*/
-
     
+    /*section_6*/    
 
     .email-automation {
         width: 328px;
         height: 100%;
         overflow-x: hidden;
     }
+
     .email-automation img {
         width: 100%;
         height: 100%;
     }
+
     .automate-amazon-img {
         padding: 0;
     }
 
     /*section_7*/
+
+    .section_7 {
+
+    }
 
     .fair-prices-cloud, .fair-prices-h2, .button-fair-prices, .fair-prices, .fair-prices-h3 {
         display: none;
@@ -199,34 +256,92 @@
     }
     
     .prices-h2 {
-        background-size: auto;
-        display: contents;
+        transform: rotate(-90deg);
+        transform-origin: left top 0;
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg); 
+        position: absolute;
+        /* background-size: auto; */
+        display: block;
         font-weight: bold;
         font-size: 106px;
-        line-height: 32px;
-/* identical to box height, or 30% */
-        transform: rotate(-90deg);
+        line-height: 32px;      
+       
         font-family: 'Raleway', sans-serif;
         text-transform: uppercase;
         letter-spacing: 1.2em;
-        color: #FFFFFF;
-        
+        color: #FFFFFF;              
 
     }
 
+    .prices-h2div {
+        width: 360px;
+        height: 1400px;
+        background: #027FC2;
+        
+    }
+
+    .terms-and-conditions-fair-prices {
+        text-align: left;        
+    }
+    
+    
     /*section_8*/
 
     .negative_reviews-h2 {
         width: 328px;
     }
-
+    
     .negative_reviews {
-        width: 320px;
-        height: 100%;
+        margin: 20px 0 10px 0;
+        width: 360px;
+        max-height: 90px;
+        box-shadow: 0px 9px 31px rgba(0, 0, 0, 0.07), 0px 1.12694px 3.88168px rgba(0, 0, 0, 0.035);
+        border-radius: 8px
+        
     } 
 
     .negative_reviews img {
         max-width: 320px;
         height: 100%;
     }
+    
+    .negative_reviews-h4 img {
+        width: 8%;
+        height: auto;
+        margin-right: 15px;
+    }
+
+    .negative_reviews-h4 img:last-child.cross-img{
+        /* display: initial; */
+        display: inline-block;
+        margin-left: 25px;
+        text-align: right;
+    }
+
+    .negative_reviews p {
+        display: none;
+    }
+
+    .cross-img:hover {
+        color: lawngreen;
+    }
+
+    .negative_reviews-h4 img:last-child.cross-img:active, .negative_reviews p:active {
+        transform: rotate(45deg);
+        display: initial;
+        transition: all 0.4s ease-in;
+    }
+
+    .negative_reviews:last-child {
+        display: none;
+    }
 }
+
+
+/* <p>Нажми <a href="#hidden1" onclick="view('hidden1'); return false">эту ссылку</a></p>  
+<div id="hidden1" style="display: none;">
+<h3>Тут заголовок</h3>
+<p>А тут основной текст</p></div> */
