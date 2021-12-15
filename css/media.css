@@ -3,7 +3,7 @@
 
 @media screen and (max-width: 1200px){
 
-    
+
 
     .section_1, .section_2, .section_3, .section_4, .section_5, .section_6, .section_7, .section_8 {
         max-width: 1200px;
@@ -15,8 +15,8 @@
         text-align: center;
        display: flex;
        flex-direction: column;
-       flex-wrap: wrap;        
-    }   
+       flex-wrap: wrap;
+    }
 
 
 .fair-prices-cloud {
@@ -25,7 +25,7 @@
     /* .section_1_text {
         order: 2;
     } */
-    
+
     /* .section_1_img1 {
         order: 1;
     } */
@@ -36,7 +36,7 @@
     .body, html {
         margin: 0;
         padding: 0;
-        
+
 
     }
 
@@ -49,12 +49,12 @@
 
     h1 {
         font-weight: bold;
-        font-size: 32px;    
+        font-size: 32px;
     }
 
     h2 {
         font-size: 24px;
-        line-height: 29px;        
+        line-height: 29px;
     }
 
     h4 {
@@ -78,9 +78,9 @@
        max-width: 360px;
        display: flex;
        flex-direction: column;
-       flex-wrap: wrap; 
-       overflow-x:hidden;              
-    }  
+       flex-wrap: wrap;
+       overflow-x:hidden;
+    }
 
     .logo {
         display: block;
@@ -95,7 +95,7 @@
         color: #027FC2;
         padding-left: 26px;
     }
-    
+
     .logo-image {
         display: block;
         position: absolute;
@@ -105,8 +105,8 @@
         width: 24px;
     }
 
-    .navbarRight {        
-        display: none;        
+    .navbarRight {
+        display: none;
     }
 
     .section_1 {
@@ -140,7 +140,7 @@
         max-width: 328px;
         max-height: 230px;
     }
-    
+
     .section_1_img2 img {
         width: 100%;
         height: 100%;
@@ -167,7 +167,7 @@
         text-align: left;
         box-shadow: 0px 9px 31px rgba(0, 0, 0, 0.07), 0px 1.12694px 3.88168px rgba(0, 0, 0, 0.035);
         border-radius: 8px;
-        
+
     }
 
     .why-should-care p {
@@ -186,7 +186,7 @@
         font-weight: normal;
         font-size: 18px;
         line-height: 32px;
-        color: #333945;    
+        color: #333945;
     }
 
     .why-should-care h4 {
@@ -225,8 +225,8 @@
         width: 100%;
         height: 100%;
     }
-    
-    /*section_6*/    
+
+    /*section_6*/
 
     .email-automation {
         width: 328px;
@@ -254,70 +254,78 @@
         width: 100%;
         height: 100%;
     }
-    
+
     .prices-h2 {
         transform: rotate(-90deg);
-        transform-origin: left top 0;
-        -moz-transform: rotate(-90deg);
-        -ms-transform: rotate(-90deg);
-        -webkit-transform: rotate(-90deg);
-        -o-transform: rotate(-90deg); 
+        transform-origin: left bottom;
         position: absolute;
+        left: 100%;
+        bottom: 0;
+        margin: 0;
         /* background-size: auto; */
         display: block;
         font-weight: bold;
         font-size: 106px;
-        line-height: 32px;      
-       
+        line-height: 1;
+
         font-family: 'Raleway', sans-serif;
         text-transform: uppercase;
         letter-spacing: 1.2em;
-        color: #FFFFFF;              
+        color: #FFFFFF;
 
     }
 
     .prices-h2div {
+        position: relative;
         width: 360px;
         height: 1400px;
         background: #027FC2;
-        
+
     }
 
     .terms-and-conditions-fair-prices {
-        text-align: left;        
+        text-align: left;
     }
-    
-    
+
+
     /*section_8*/
 
     .negative_reviews-h2 {
         width: 328px;
     }
-    
+
     .negative_reviews {
         margin: 20px 0 10px 0;
         width: 360px;
         max-height: 90px;
         box-shadow: 0px 9px 31px rgba(0, 0, 0, 0.07), 0px 1.12694px 3.88168px rgba(0, 0, 0, 0.035);
         border-radius: 8px
-        
-    } 
+    }
+
+    .negative_reviews-h4 {
+        display: flex;
+    }
+
+    .cross-img {
+        min-width: 27px;
+        margin-left: auto;
+    }
 
     .negative_reviews img {
         max-width: 320px;
         height: 100%;
     }
-    
+
     .negative_reviews-h4 img {
         width: 8%;
         height: auto;
         margin-right: 15px;
     }
 
-    .negative_reviews-h4 img:last-child.cross-img{
+    .negative_reviews-h4 .cross-img {
         /* display: initial; */
-        display: inline-block;
-        margin-left: 25px;
+        display: block;
+        margin-left: auto;
         text-align: right;
     }
 
@@ -329,7 +337,7 @@
         color: lawngreen;
     }
 
-    .negative_reviews-h4 img:last-child.cross-img:active, .negative_reviews p:active {
+    .negative_reviews-h4 .cross-img:active, .negative_reviews p:active {
         transform: rotate(45deg);
         display: initial;
         transition: all 0.4s ease-in;
@@ -341,7 +349,7 @@
 }
 
 
-/* <p>Нажми <a href="#hidden1" onclick="view('hidden1'); return false">эту ссылку</a></p>  
+/* <p>Нажми <a href="#hidden1" onclick="view('hidden1'); return false">эту ссылку</a></p>
 <div id="hidden1" style="display: none;">
 <h3>Тут заголовок</h3>
 <p>А тут основной текст</p></div> */
