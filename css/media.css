@@ -22,13 +22,7 @@
 .fair-prices-cloud {
     width: 676px;
 }
-    /* .section_1_text {
-        order: 2;
-    } */
-
-    /* .section_1_img1 {
-        order: 1;
-    } */
+    
 }
 
 @media screen and (max-width: 980px) {
@@ -36,8 +30,6 @@
     .body, html {
         margin: 0;
         padding: 0;
-
-
     }
 
     p {
@@ -80,6 +72,7 @@
        flex-direction: column;
        flex-wrap: wrap;
        overflow-x:hidden;
+       margin: 0;
     }
 
     .logo {
@@ -118,17 +111,20 @@
         text-align: left;
         margin: 0;
         text-align: justify;
+        order: 1;
     }
 
     .section_1_text1 {
         font-size: 16px;
         text-align: justify;
         margin-left: 0px;
+        order: 4;
     }
 
     .section_1_img1 {
         max-width: 328px;
         max-height: 230px;
+        order: 0;
     }
 
     .section_1_img1 img {
@@ -139,6 +135,7 @@
     .section_1_img2 {
         max-width: 328px;
         max-height: 230px;
+        order: 3;
     }
 
     .section_1_img2 img {
@@ -158,16 +155,23 @@
 
     /*section_2*/
 
+    .why-should-care-content {
+        padding: 18px 32px 0 13px;
+    }
+
     .why-should-care {
-        width: 328px;
+        width: 360px;
         height: 70px;
         overflow: hidden;
         margin: 24px 5px 0 0;
-        padding: 0 20px 0 24px;
+        padding: 0 0px 0 0px;
         text-align: left;
         box-shadow: 0px 9px 31px rgba(0, 0, 0, 0.07), 0px 1.12694px 3.88168px rgba(0, 0, 0, 0.035);
         border-radius: 8px;
+    }
 
+    .why-should-care:nth-child(1):before, .why-should-care:nth-child(4):before,.why-should-care:nth-child(7):before {
+        display: none;
     }
 
     .why-should-care p {
@@ -190,7 +194,7 @@
     }
 
     .why-should-care h4 {
-        text-align: left;
+        display: flex;
     }
 
     .why-should-care:last-child {
@@ -243,10 +247,18 @@
         padding: 0;
     }
 
+    .email-automation-img-laptop {
+    display: none;
+    }
+
+    .email-automation-img-mobile {
+       display: flex; 
+    }
+
     /*section_7*/
 
-    .section_7 {
-
+    .section_7 {         
+        background-size: 100% 0px;        
     }
 
     .fair-prices-cloud, .fair-prices-h2, .button-fair-prices, .fair-prices, .fair-prices-h3 {
@@ -259,10 +271,10 @@
         transform: rotate(-90deg);
         transform-origin: left bottom;
         position: absolute;
-        left: 100%;
-        bottom: 0;
+        left: 65%;
+        bottom: 230px;
         margin: 0;
-        /* background-size: auto; */
+        background: #027FC2;
         display: block;
         font-weight: bold;
         font-size: 106px;
@@ -280,7 +292,7 @@
         width: 360px;
         height: 1400px;
         background: #027FC2;
-
+        margin-left: -15px;
     }
 
     .terms-and-conditions-fair-prices {
@@ -297,7 +309,7 @@
     .negative_reviews {
         margin: 20px 0 10px 0;
         width: 360px;
-        max-height: 90px;
+        height: 100%;
         box-shadow: 0px 9px 31px rgba(0, 0, 0, 0.07), 0px 1.12694px 3.88168px rgba(0, 0, 0, 0.035);
         border-radius: 8px
     }
@@ -333,23 +345,40 @@
         display: none;
     }
 
-    .cross-img:hover {
-        color: lawngreen;
-    }
+    
 
-    .negative_reviews-h4 .cross-img:active, .negative_reviews p:active {
-        transform: rotate(45deg);
-        display: initial;
-        transition: all 0.4s ease-in;
-    }
+    
 
     .negative_reviews:last-child {
         display: none;
     }
+
+    .cross-img-box {
+        
+    }
+
+    .input_1 {
+        display: none;
+        position: absolute;
+    }
+
+    .label-1 {
+        /* padding: 2px; */
+    }
+    /* */
+     .label-1>input:checked + .cross-img {
+        transform: rotate(45deg);
+        display: initial;
+         
+    }
+
+
+
+    /*   проверка чекбок на вращение  */
+    /* .cross-img:active {
+        transform: rotate(45deg);
+        display: initial;
+        transition: all 0.05s ease-in;
+    } */
+    
 }
-
-
-/* <p>Нажми <a href="#hidden1" onclick="view('hidden1'); return false">эту ссылку</a></p>
-<div id="hidden1" style="display: none;">
-<h3>Тут заголовок</h3>
-<p>А тут основной текст</p></div> */
