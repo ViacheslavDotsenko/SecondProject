@@ -98,6 +98,10 @@
         width: 24px;
     }
 
+    .cross-img {
+        display: initial;
+    }
+
     .navbarRight {
         display: none;
     }
@@ -156,12 +160,12 @@
     /*section_2*/
 
     .why-should-care-content {
-        padding: 18px 32px 0 13px;
+        padding: 21px 13px 16px 18px;
     }
 
     .why-should-care {
         width: 360px;
-        height: 70px;
+        height: 100%;
         overflow: hidden;
         margin: 24px 5px 0 0;
         padding: 0 0px 0 0px;
@@ -174,7 +178,7 @@
         display: none;
     }
 
-    .why-should-care p {
+    .text_p {
         display: none;
     }
 
@@ -197,6 +201,10 @@
         display: flex;
     }
 
+    .why-should-care-title {
+        margin: 0;
+    }
+    
     .why-should-care:last-child {
         margin-left: 0;
     }
@@ -334,51 +342,36 @@
         margin-right: 15px;
     }
 
-    .negative_reviews-h4 .cross-img {
-        /* display: initial; */
+    .negative_reviews-h4 .cross-img {        
         display: block;
         margin-left: auto;
         text-align: right;
+    }
+
+    .label-5 input:checked ~.negative_reviews .text_p5 {
+        display: flex;
+         
     }
 
     .negative_reviews p {
         display: none;
     }
 
-    
-
-    
+    .showP {
+        display: flex !important; 
+    }
 
     .negative_reviews:last-child {
         display: none;
     }
-
-    .cross-img-box {
-        
-    }
-
-    .input_1 {
-        display: none;
-        position: absolute;
-    }
-
-    .label-1 {
-        /* padding: 2px; */
-    }
-    /* */
-     .label-1>input:checked + .cross-img {
-        transform: rotate(45deg);
-        display: initial;
-         
-    }
-
-
-
-    /*   проверка чекбок на вращение  */
-    /* .cross-img:active {
-        transform: rotate(45deg);
-        display: initial;
-        transition: all 0.05s ease-in;
-    } */
     
+    .show {
+    transform: rotate(45deg);
+    display: initial;
+    transition: all 0.05s ease-in;
+    }
+    
+    .collapse {
+
+    }
 }

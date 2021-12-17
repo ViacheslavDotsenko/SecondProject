@@ -157,7 +157,11 @@ p {
     font-size: 18px;
     line-height: 32px;
     color: #333945;
-}
+} 
+
+ .cross-img {
+display: none;
+ }
 
     /*section_1*/
 
