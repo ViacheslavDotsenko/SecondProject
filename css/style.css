@@ -159,8 +159,8 @@ p {
     color: #333945;
 } 
 
- .cross-img {
-display: none;
+.cross-img {
+    display: none;
  }
 
     /*section_1*/
@@ -169,9 +169,7 @@ display: none;
     margin-top: 108px;
 }
 
-.section_1_text {
-
-    /* max-height: 192.27px; */
+.section_1_text {    
     max-width: 550px;
     position: relative;
     vertical-align: top;
@@ -399,6 +397,7 @@ display: none;
 }
 
     /*section_7*/
+
 .prices-h2 {
     display: none;
 }
@@ -422,8 +421,7 @@ display: none;
     z-index: 10;
     flex-direction: row;
     width: 1100px;
-    margin-top: 94px;
-    /* margin-right: auto; */
+    margin-top: 94px;    
 }
 
 
@@ -452,7 +450,6 @@ display: none;
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
-/* identical to box height */
     color: #FFFFFF;
     background: linear-gradient(180deg, #0181C1 0%, #2DB4D6 100%);
     border: 0;
@@ -496,7 +493,6 @@ display: none;
     padding-top: 10px;
     max-width: 650px;
     display:inline-block;
-
 }
 
     /* section_8*/
@@ -504,14 +500,15 @@ display: none;
 .hide {
     display: none;
 }
+
 .negative_reviews_box {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch;
     margin: 0 -16px;
-
 }
+
 .negative_reviews {
     background: #FFFFFF;    
     box-shadow: 0px 62px 80px rgba(0, 0, 0, 0.07), 0px 22px 24px rgba(0, 0, 0, 0.04), 0px 6px 4px rgba(0, 0, 0, 0.03);

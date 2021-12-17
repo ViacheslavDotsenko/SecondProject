@@ -167,8 +167,8 @@
         width: 360px;
         height: 100%;
         overflow: hidden;
-        margin: 24px 5px 0 0;
-        padding: 0 0px 0 0px;
+        margin: 27px 11px 0 3px;
+        padding: 0px 0px 0px 0px;
         text-align: left;
         box-shadow: 0px 9px 31px rgba(0, 0, 0, 0.07), 0px 1.12694px 3.88168px rgba(0, 0, 0, 0.035);
         border-radius: 8px;
@@ -204,7 +204,7 @@
     .why-should-care-title {
         margin: 0;
     }
-    
+
     .why-should-care:last-child {
         margin-left: 0;
     }
@@ -287,7 +287,6 @@
         font-weight: bold;
         font-size: 106px;
         line-height: 1;
-
         font-family: 'Raleway', sans-serif;
         text-transform: uppercase;
         letter-spacing: 1.2em;
@@ -324,6 +323,7 @@
 
     .negative_reviews-h4 {
         display: flex;
+        text-align: left;
     }
 
     .cross-img {
@@ -369,9 +369,5 @@
     transform: rotate(45deg);
     display: initial;
     transition: all 0.05s ease-in;
-    }
-    
-    .collapse {
-
     }
 }

@@ -578,14 +578,12 @@
   <script type="text/javascript">	
 	const elements = document.querySelectorAll('.collapse');
         Array.from(elements).forEach(element=>{  
-        const text = element.querySelector('.text_p'); 
-       
-        
-
-        const cross = element.querySelector('.cross-img');        
+        const text = element.querySelector('.text_p');
+        const cross = element.querySelector('.cross-img'); 
+               
         cross.addEventListener('click', ()=>{
-            cross.classList.toggle('show');
-            text.classList.toggle('showP');
+        cross.classList.toggle('show');
+        text.classList.toggle('showP');
         });
      });
 
